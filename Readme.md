@@ -16,6 +16,10 @@
 
 [008 5kyu "Don't Drink the Water"](#008-5kyu-dont-drink-the-water)
 
+[009 5kyu "Land perimeter"]
+
+
+
 
 
 
@@ -68,6 +72,7 @@ _Example_ : The binary representation of 1234 is 10011010010, so the function sh
 ---
 
 
+
 ## 004 7kyu "List Filtering" ##
 
 In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
@@ -83,7 +88,12 @@ ListFilterer.GetIntegersFromList(new List<object>(){1, 2, "a", "b", "aasf", "1",
 [home](#my-solutions)
 
 ---
+
+
+
+
 ## 005 6kyu "Chaser's schedule" ##
+[ _link on codewars_ ](https://www.codewars.com/kata/628df6b29070907ecb3c2d83)
 
 A runner, who runs with base speed s with duration t will cover a distances d: d = s * t
 
@@ -131,6 +141,7 @@ The right side letters and their power:
 ---
 
 ## 007 7kyu "Another card game" ##
+[ _link on codewars_ ](https://www.codewars.com/kata/633874ed198a4c00286aa39d)
 
 Twelve cards with grades from 0 to 11 randomly divided among 3 players: Frank, Sam, and Tom, 4 cards each. The game consists of 4 rounds. The goal of the round is to move by the card with the most points.
 In round 1, the first player who has a card with 0 points, takes the first turn, and he starts with that card. Then the second player (queue - Frank -> Sam -> Tom -> Frank, etc.) can move with any of his cards (each card is used only once per game, and there are no rules that require players to make only the best moves). The third player makes his move after the second player, and he sees the previous moves.
@@ -150,6 +161,9 @@ Return false if Frank has no chance.
 
 ## 008 5kyu "Don't Drink the Water" ##
 
+[( _link on codewars_ )](https://www.codewars.com/kata/562e6df5cf2d3908ad00019e)
+
+
 Given a two-dimensional array representation of a glass of mixed liquids, sort the array such that the liquids appear in the glass based on their density. (Lower density floats to the top) The width of the glass will not change from top to bottom.
 
 Density Chart
@@ -160,9 +174,9 @@ Density Chart
 
 
 {                             {
-  { 'H', 'H', 'W', 'O' },        { 'O','O','O','O' },
-  { 'W', 'W', 'O', 'W' },  =>    { 'W','W','W','W' },
-  { 'H', 'H', 'O', 'O' }         { 'H','H','H','H' }
+  { 'H', 'H', 'W', 'O' },        { 'O','O','O','O' },  
+  { 'W', 'W', 'O', 'W' },  =>    { 'W','W','W','W' },  
+  { 'H', 'H', 'O', 'O' }         { 'H','H','H','H' }  
 }                             }
 
 The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
@@ -170,4 +184,20 @@ The glass representation may be larger or smaller. If a liquid doesn't fill a ro
 [home](#my-solutions)
 
 ---
+
+## 009 5kyu "Land perimeter" ##  
+[( _link on codewars_ )](https://www.codewars.com/kata/5839c48f0cf94640a20001d3)
+
+Given an array arr of strings, complete the function by calculating the total perimeter of all the islands. Each piece of land will be marked with 'X' while the water fields are represented as 'O'. Consider each tile being a perfect 1 x 1 piece of land. Some examples for better visualization:
+['XOOXO',  
+ 'XOOXO',  
+ 'OOOXO',  
+ 'XXOXO',  
+ 'OXOOO']   
+ should return: "Total land perimeter: 24".
+
+[home](#my-solutions)
+
+---
+
 
