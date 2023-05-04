@@ -12,6 +12,9 @@
 
 [006 7kyu "Alphabet war"](#006-7kyu-alphabet-war)
 
+[007 7kyu "Another card game"](#007-7kyu-another-card-game)
+
+[008 5kyu "Don't Drink the Water"](#008-5kyu-dont-drink-the-water)
 
 
 
@@ -126,3 +129,45 @@ The right side letters and their power:
 [home](#my-solutions)
 
 ---
+
+## 007 7kyu "Another card game" ##
+
+Twelve cards with grades from 0 to 11 randomly divided among 3 players: Frank, Sam, and Tom, 4 cards each. The game consists of 4 rounds. The goal of the round is to move by the card with the most points.
+In round 1, the first player who has a card with 0 points, takes the first turn, and he starts with that card. Then the second player (queue - Frank -> Sam -> Tom -> Frank, etc.) can move with any of his cards (each card is used only once per game, and there are no rules that require players to make only the best moves). The third player makes his move after the second player, and he sees the previous moves.
+The winner of the previous round then makes the first move in the next round with any remaining card.
+The player who wins 2 rounds first, wins the game.
+
+**Task:** 
+Return true if Frank has a chance of winning the game.
+Return false if Frank has no chance.
+
+*Input:*
+3 arrays of 4 unique numbers in each (numbers in array are sorted in ascending order). Input is always valid, no need to check.
+
+[home](#my-solutions)
+
+---
+
+## 008 5kyu "Don't Drink the Water" ##
+
+Given a two-dimensional array representation of a glass of mixed liquids, sort the array such that the liquids appear in the glass based on their density. (Lower density floats to the top) The width of the glass will not change from top to bottom.
+
+Density Chart
+- Honey    'H'  1.36 
+- Water    'W'  1.00 
+- Alcohol  'A'  0.87 
+- Oil      'O'  0.80  
+
+
+{                             {
+  { 'H', 'H', 'W', 'O' },        { 'O','O','O','O' },
+  { 'W', 'W', 'O', 'W' },  =>    { 'W','W','W','W' },
+  { 'H', 'H', 'O', 'O' }         { 'H','H','H','H' }
+}                             }
+
+The glass representation may be larger or smaller. If a liquid doesn't fill a row, it floats to the top and to the left.
+
+[home](#my-solutions)
+
+---
+
