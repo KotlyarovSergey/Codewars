@@ -61,7 +61,7 @@ int Perimeter(string[] map)
 //string[] map = new string[]{"XXXXXOOO", "OOXOOOOO", "OOOOOOXO", "XXXOOOXO", "OXOXXOOX"};
 
 // 18
-// string[] map = new string[]{"XOOO", "XOXO", "XOXO", "OOXX", "OOOO"};
+ string[] map = new string[]{"XOOO", "XOXO", "XOXO", "OOXX", "OOOO"};
 
 // string[] map = new string[]{};
 // string[] map = new string[]{"O"};

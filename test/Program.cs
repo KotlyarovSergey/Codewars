@@ -4,7 +4,7 @@
 // Console.WriteLine(string.Join(" ", reversedWords));
 // return;
 
-string[] words = new string[] {"Маша", "Паша", "Миша", "Оля", "Игорь", "Юля", "Геннадий"};
+string[] words = new string[] { "Маша", "Паша", "Миша", "Оля", "Игорь", "Юля", "Геннадий" };
 var nW = words.Select(s => s = (s.Length > 4) ? "---" : s);
 //var nW = words.Select(s => s[1] + s[3]);
 Console.WriteLine(string.Join(" ", nW));
@@ -18,16 +18,14 @@ foreach (var result in nI)
     Console.WriteLine(result);
 }
 
+int[] array = new int[] { 1, 6, 4, 1, 7, 1, 5, 2, 9 };
+int[] a1 = array.Where(x => x > 4).ToArray();
+Console.WriteLine(string.Join(' ', a1));
 
-// return;
 
-// string[] greetings = new string[] { "hi", "hello", "hey", "howdy" };
+a1 = a1.Append(10).ToArray();
+Console.WriteLine(string.Join(' ', a1));
 
-// var results = greetings.Select(
-//     s => s[0].ToString().ToUpper() + s.Substring(1)
-// );
-
-// foreach (var result in results)
-// {
-//     Console.WriteLine(result);
-// }
+// удалить элемент по индексу
+a1 = array.Where((val, idx) => idx != 3).ToArray();
+Console.WriteLine(string.Join(' ', a1));
