@@ -29,3 +29,22 @@ Console.WriteLine(string.Join(' ', a1));
 // удалить элемент по индексу
 a1 = array.Where((val, idx) => idx != 3).ToArray();
 Console.WriteLine(string.Join(' ', a1));
+
+
+Dictionary<char, int> dict = new Dictionary<char, int>()
+{
+    {'a', 2},
+    {'b', 3}
+};
+
+Console.WriteLine(dict['a']);
+dict['a'] = 5;
+Console.WriteLine(dict['a']);
+char sym = 'a';
+if(dict.ContainsKey(sym)) dict['a']++;
+Console.WriteLine(dict['a']);
+
+int[] aArr = new int[]{1, 3, 1, 8, 9, 4, 9, 1, 9};
+List<int> aList = new List<int>();
+
+
