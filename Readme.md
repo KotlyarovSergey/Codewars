@@ -24,10 +24,7 @@
 
 [012 4kyu "Strings Mix"](#012-4kyu-strings-mix)
 
-
-
-
-
+[013 4kyu "So Many Permutations!"](#013-4kyu-so-many-permutations)
 
 
 
@@ -289,10 +286,38 @@ Hopefully other examples can make this clearer.
   s2="Yes they are here! aaaaa fffff"   
   mix(s1, s2) --> "=:aaaaaa/2:eeeee/=:fffff/1:tt/2:rr/=:hh"   
 
+[home](#my-solutions)
+
+---
 
 
 
+## 013 4kyu "So Many Permutations!" ##  
+[( _link on codewars_ )](https://www.codewars.com/kata/5254ca2719453dcc0b00027d/csharp)
+
+In this kata, your task is to create all permutations of a non-empty input string and remove duplicates, if present.
+
+Create as many "shufflings" as you can!
+
+Examples:
+
+  With input 'a':
+  Your function should return: ['a']
+
+  With input 'ab':
+  Your function should return ['ab', 'ba']
+
+  With input 'abc':
+  Your function should return ['abc','acb','bac','bca','cab','cba']
+
+  With input 'aabb':
+  Your function should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
+
+Note: The order of the permutations doesn't matter.
+
+Good luck!
 
 
+[home](#my-solutions)
 
-
+---
